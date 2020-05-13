@@ -10,7 +10,11 @@ export default [
   {
     path: "/theory",
     name: "Theory",
-    component: () => import("@/views/theory/theory.view.vue"),
+    components: {
+      default: () => import("@/views/theory/theory.view.vue"),
+      sidebar: () =>
+        import("@/components/tvc-sidebar/tvc-sidebar.component.vue")
+    },
     meta: {
       friendlyName: "Теория"
     },
