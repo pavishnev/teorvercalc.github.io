@@ -1,0 +1,63 @@
+body{
+    padding: 0%;
+    background-image: url("/img/Roulette.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("/fonts/Rubik-Regular.ttf");
+   }
+
+   
+   ::-webkit-scrollbar {
+    width: 15px; 
+    height: 5px;
+
+}
+::-webkit-scrollbar-button {  background-color: #666; border-radius: 3px; }
+::-webkit-scrollbar-track {  background-color: #fc9929;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #fc9929; border-radius: 5px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+   
+.header a{
+    font-size: 1.1rem;
+    color:black;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(226, 226, 226,.7);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(226, 226, 226,1);
+}
+.navbar{
+    margin-left:1rem;
+    display: block;
+}
+.header {
+    color:whitesmoke;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem;
+    box-shadow:0 10px 5rem rgb(0, 0, 0);
+    max-height: 50vh;
+}
+.header > img{
+    width: 4rem;
+    height: 4rem;
+    max-width: 4vw;
+    max-height: 16vh;
+    margin: auto 1.5rem;
+    background-repeat     : no-repeat;
+    background-size       : cover;
+    background-position-x : 50%;
+    background-position-y : 50%;
+}
+p{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}

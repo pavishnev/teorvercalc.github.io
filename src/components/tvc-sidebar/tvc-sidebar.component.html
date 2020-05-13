@@ -1,0 +1,14 @@
+<div class="sidebar">
+  <div class="fix">
+    <ul class="list-group list-group-flush mr-auto">
+      <template  v-for="routeInfo of RoutesInfo.find(x => x.name === 'Theory').children">
+        <li class="list-group-item theme" v-if="routeInfo.meta && routeInfo.meta.friendlyTitle">
+          {{routeInfo.meta.friendlyTitle}}
+        </li>
+        <li class="list-group-item" v-if="routeInfo.meta && routeInfo.meta.friendlyName">
+          <router-link :to="{name: routeInfo.name}">{{routeInfo.meta.friendlyName}}</router-link>
+        </li>
+      </template>
+    </ul>
+  </div>
+</div>
