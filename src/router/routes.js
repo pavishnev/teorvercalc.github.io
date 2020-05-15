@@ -43,7 +43,7 @@ export default [
           articleTitle: "1.1 Сочетания - Калькулятор"
         }
       },
-//////////////////////////////////1.2-perestanovki
+      //////////////////////////////////1.2-perestanovki
       {
         path: "perestanovki/theory",
         name: "Perestanovki-theory",
@@ -111,14 +111,12 @@ export default [
         path: "hypergeom/calc",
         name: "Hypergeom-calc",
         component: () =>
-          import(
-            "@/content/2.1-hypergeom/calc/2.1-hypergeom.calc.content.vue"
-            ),
+          import("@/content/2.1-hypergeom/calc/2.1-hypergeom.calc.content.vue"),
         meta: {
           articleTitle: "2.1 Гипергеометрическое распределение - Калькулятор"
         }
       },
-      //////////////////////////////////2.2-bernulli 
+      //////////////////////////////////2.2-bernulli
       {
         path: "bernulli/theory",
         name: "Bernulli-theory",
@@ -127,7 +125,7 @@ export default [
             "@/content/2.2-bernulli/theory/2.2-bernulli.theory.content.vue"
           ),
         meta: {
-         // friendlyTitle: "2. Элементы теории вероятности", //
+          // friendlyTitle: "2. Элементы теории вероятности", //
           friendlyName: "2.2 Схема Бернулли",
           articleTitle: "2.2 Схема Бернулли - Теория"
         }
@@ -136,14 +134,12 @@ export default [
         path: "bernulli/calc",
         name: "Bernulli-calc",
         component: () =>
-          import(
-            "@/content/2.2-bernulli/calc/2.2-bernulli.calc.content.vue"
-            ),
+          import("@/content/2.2-bernulli/calc/2.2-bernulli.calc.content.vue"),
         meta: {
           articleTitle: "2.2 Схема Бернулли - Калькулятор"
         }
       },
-       //////////////////////////////////3.1-laplas_border
+      //////////////////////////////////3.1-laplas_border
       {
         path: "laplas_border/theory",
         name: "Laplas_border-theory",
@@ -163,7 +159,7 @@ export default [
         component: () =>
           import(
             "@/content/3.1-laplas_border/calc/3.1-laplas_border.calc.content.vue"
-            ),
+          ),
         meta: {
           articleTitle: "3.1 Граничная теорема Лапласа - Калькулятор"
         }
@@ -173,9 +169,7 @@ export default [
         path: "puasson/theory",
         name: "Puasson-theory",
         component: () =>
-          import(
-            "@/content/3.2-puasson/theory/3.2-puasson.theory.content.vue"
-          ),
+          import("@/content/3.2-puasson/theory/3.2-puasson.theory.content.vue"),
         meta: {
           //friendlyTitle: "3.2 Граничные теоремы", //
           friendlyName: "3.2 Теорема Пуассона",
@@ -186,13 +180,11 @@ export default [
         path: "puasson/calc",
         name: "Puasson-calc",
         component: () =>
-          import(
-            "@/content/3.2-puasson/calc/3.2-puasson.calc.content.vue"
-            ),
+          import("@/content/3.2-puasson/calc/3.2-puasson.calc.content.vue"),
         meta: {
           articleTitle: "3.2 Теорема Пуассона - Калькулятор"
         }
-      },
+      }
     ]
   },
   {

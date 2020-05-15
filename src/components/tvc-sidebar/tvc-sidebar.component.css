@@ -10,16 +10,31 @@
         ". sidebar content ."
         "footer footer footer footer";
     grid-template-rows: auto 2fr auto;
+
+    box-shadow: 0 -30rem 45rem rgb(0, 251, 63);
    border-bottom: transparent;
     border-radius: 10px;
 
 }
+.left-shade{
+    grid-area: left-shade; 
+    box-shadow:-8vw 0 5rem -3px rgb(238, 238, 238);
+    margin-left: 89%;
+    
+ }
+ .right-shade{
+ background-color: transparent;
+  margin-right:10rem;
+    grid-area: right-shade; 
+    box-shadow: 150px 0 5rem rgb(0, 251, 63);
+    border-radius: 10rem;
+ }
 
 .wrapper .header {
     grid-area: header;
 }
 
-.wrapper  .sidebar{
+.sidebar{
    grid-area: sidebar; 
 }
 .sidebar .fix{
@@ -49,7 +64,7 @@
  .list-group-item{
     background-color: transparent;
 }
-.wrapper .content{
+.content{
     grid-area: content;
     background-color: whitesmoke;
     padding: 3rem;

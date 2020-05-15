@@ -1,0 +1,27 @@
+
+.mainpage{
+ position: absolute;
+    width:70%;
+    align-self: center;
+   margin-top:8rem;
+   margin-bottom: 18rem;
+   margin-left: 15vw;
+    margin-right: 15vw;
+   z-index: 10000;
+align-self: flex-end;
+    background-color: whitesmoke;
+    padding: 3rem;
+    border-radius: .5rem;
+    max-height: 82vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+ 
+}
+p{
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}
+.image{
+    margin:3rem;
+    width: 30rem;
+}

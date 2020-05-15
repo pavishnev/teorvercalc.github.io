@@ -3,6 +3,7 @@ body{
     background-image: url("/img/Roulette.jpg");
     background-attachment: fixed;
     background-size: cover;
+    overflow-y: hidden;
 }
 @font-face {
     font-family: "Rubik";
@@ -60,3 +61,4 @@ p{
     line-height: 2.5rem;
     font-size: 1.2rem;
 }
+
