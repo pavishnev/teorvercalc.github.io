@@ -14,20 +14,20 @@
                     <td>
                         <h4><b>n =</b></h4>
                     </td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" v-model="param_N" class="form-control"></td>
                     <td rowspan="1"> <img src="/img/calc/2.png" alt=""></td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-                        <div class="result">
-                            Результат:<p id="result">300</p>
+                        <div class="result" :class="classObj">
+                            Результат:<p id="result">{{result}}</p>
                         </div>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><button class="btn btn-primary">Рассчитать</button></td>
+                    <td colspan="4"><button class="btn btn-primary" @click="compute">Рассчитать</button></td>
                 </tr>
             </tbody>
         </table>

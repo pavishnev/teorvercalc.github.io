@@ -10,6 +10,7 @@ export default [
   {
     path: "/theory",
     name: "Theory",
+    redirect: { name: "Sochetania-theory" },
     components: {
       default: () => import("@/views/theory/theory.view.vue"),
       sidebar: () =>
