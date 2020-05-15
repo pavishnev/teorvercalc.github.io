@@ -14,37 +14,37 @@
                     <td>
                         <h4><b>n =</b></h4>
                     </td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input v-model="param_n" type="text" class="form-control"></td>
                     <td rowspan="4"> <img src="/img/calc/4.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>
                         <h4><b>N =</b></h4>
                     </td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input v-model="param_N" type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>
                         <h4><b>m =</b></h4>
                     </td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input v-model="param_m" type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td>
                         <h4><b>M =</b></h4>
                     </td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input v-model="param_M" type="text" class="form-control"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <div class="result">
-                            Результат:<p id="result">300</p>
+                        <div class="result" :class="classObj">
+                            Результат:<p id="result">{{result}}</p>
                         </div>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td colspan="4"><button class="btn btn-primary">Рассчитать</button></td>
+                    <td colspan="4"><button class="btn btn-primary" @click="compute">Рассчитать</button></td>
                 </tr>
             </tbody>
         </table>
