@@ -1,0 +1,55 @@
+<div class="calc-wrap">
+    <form action="" class="calculator">
+
+    <h3><b>Инструкция:</b></h3>
+    <ul class="list-group list-group-flush mr-auto instruction">
+        <li class="list-group-item">
+            <p><b>m -</b> выбираемые обьекты, порядок расположения которых важен
+            </p>
+        </li>
+        <li class="list-group-item">
+    
+            <p><b>n -</b> общее кол-во обьектов, каждый из которых может выбираться неоднократно</p>
+        </li>
+    </ul>
+
+        <table class="table table-borderless" width=100%>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <h3><b>Параметры</b></h3>
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>
+                            <h4><b>m =</b></h4>
+                        </td>
+                        <td><input v-model="param_M" type="text" class="form-control"></td>
+                        <td rowspan="2"> <img src="/img/calc/3.1.png" alt=""></td>
+                    </tr>
+                <tr>
+                    <td>
+                        <h4><b>n =</b></h4>
+                    </td>
+                    <td><input v-model="param_N" type="text" class="form-control"></td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td colspan="2">
+                        <div class="result" :class="classObj">
+                            Результат:<p id="result">{{result}}</p>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button class="btn btn-primary" @click="compute">Рассчитать</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>

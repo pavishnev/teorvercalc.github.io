@@ -20,42 +20,18 @@ export default [
       friendlyName: "Теория"
     },
     children: [
-      {
-        path: "sochetania/theory",
-        name: "Sochetania-theory",
-        component: () =>
-          import(
-            "@/content/1.1-sochetania/theory/1.1-sochetania.theory.content.vue"
-          ),
-        meta: {
-          friendlyTitle: "1. Элементы комбинаторики",
-          friendlyName: "1.1 Сочетания",
-          articleTitle: "1.1 Сочетания - Теория"
-        }
-      },
-      {
-        path: "sochetania/calc",
-        name: "Sochetania-calc",
-        component: () =>
-          import(
-            "@/content/1.1-sochetania/calc/1.1-sochetania.calc.content.vue"
-          ),
-        meta: {
-          articleTitle: "1.1 Сочетания - Калькулятор"
-        }
-      },
-      //////////////////////////////////1.2-perestanovki
+      //////////////////////////////////1.1-perestanovki
       {
         path: "perestanovki/theory",
         name: "Perestanovki-theory",
         component: () =>
           import(
-            "@/content/1.2-perestanovki/theory/1.2-perestanovki.theory.content.vue"
+            "@/content/1.1-perestanovki/theory/1.1-perestanovki.theory.content.vue"
           ),
         meta: {
-          //friendlyTitle: "1. Элемепппппппнты комбинаторики", //
-          friendlyName: "1.2 Перестановки",
-          articleTitle: "1.2 Перестановки - Теория"
+          friendlyTitle: "1. Элементы комбинаторики", //
+          friendlyName: "1.1 Перестановки",
+          articleTitle: "1.1 Перестановки - Теория"
         }
       },
       {
@@ -63,24 +39,99 @@ export default [
         name: "Perestanovki-calc",
         component: () =>
           import(
-            "@/content/1.2-perestanovki/calc/1.2-perestanovki.calc.content.vue"
+            "@/content/1.1-perestanovki/calc/1.1-perestanovki.calc.content.vue"
           ),
         meta: {
-          articleTitle: "1.2 Перестановки - Калькулятор"
+          articleTitle: "1.1 Перестановки - Калькулятор"
         }
       },
-      //////////////////////////////////1.3-razmechenia
+      //////////////////////////////////1.2-perestanovki-dup
+      {
+        path: "perestanovki-dup/theory",
+        name: "Perestanovki-dup-theory",
+        component: () =>
+          import(
+            "@/content/1.2-perestanovki-dup/theory/1.2-perestanovki-dup.theory.content.vue"
+          ),
+        meta: {
+        //  friendlyTitle: "1. Элементы комбинаторики", //
+          friendlyName: "1.2 Перестановки с повторениями",
+          articleTitle: "1.2 Перестановки с повторениями - Теория"
+        }
+      },
+      {
+        path: "perestanovki-dup/calc",
+        name: "Perestanovki-dup-calc",
+        component: () =>
+          import(
+            "@/content/1.2-perestanovki-dup/calc/1.2-perestanovki-dup.calc.content.vue"
+          ),
+        meta: {
+          articleTitle: "1.2 Перестановки с повторениями - Калькулятор"
+        }
+      },
+      //////////////////////////////////1.3-sochetania
+      {
+        path: "sochetania/theory",
+        name: "Sochetania-theory",
+        component: () =>
+          import(
+            "@/content/1.3-sochetania/theory/1.3-sochetania.theory.content.vue"
+          ),
+        meta: {
+        //friendlyTitle: "1. Элементы комбинаторики",
+          friendlyName: "1.3 Сочетания",
+          articleTitle: "1.3 Сочетания - Теория"
+        }
+      },
+      {
+        path: "sochetania/calc",
+        name: "Sochetania-calc",
+        component: () =>
+          import(
+            "@/content/1.3-sochetania/calc/1.3-sochetania.calc.content.vue"
+          ),
+        meta: {
+          articleTitle: "1.3 Сочетания - Калькулятор"
+        }
+      },
+      //////////////////////////////////1.4-sochetania-dup
+      {
+        path: "sochetania-dup/theory",
+        name: "Sochetania-dup-theory",
+        component: () =>
+          import(
+            "@/content/1.4-sochetania-dup/theory/1.4-sochetania-dup.theory.content.vue"
+          ),
+        meta: {
+        //friendlyTitle: "1. Элементы комбинаторики",
+          friendlyName: "1.4 Сочетания с повторениями",
+          articleTitle: "1.4 Сочетания с повторениями - Теория"
+        }
+      },
+      {
+        path: "sochetania-dup/calc",
+        name: "Sochetania-dup-calc",
+        component: () =>
+          import(
+            "@/content/1.4-sochetania-dup/calc/1.4-sochetania-dup.calc.content.vue"
+          ),
+        meta: {
+          articleTitle: "1.4 Сочетания с повторениями - Калькулятор"
+        }
+      },
+      //////////////////////////////////1.5-razmechenia
       {
         path: "razmechenia/theory",
         name: "Razmechenia-theory",
         component: () =>
           import(
-            "@/content/1.3-razmechenia/theory/1.3-razmechenia.theory.content.vue"
+            "@/content/1.5-razmechenia/theory/1.5-razmechenia.theory.content.vue"
           ),
         meta: {
           //friendlyTitle: "1. Элемепппппппнты комбинаторики", //
-          friendlyName: "1.3 Размещения",
-          articleTitle: "1.3 Размещения - Теория"
+          friendlyName: "1.5 Размещения",
+          articleTitle: "1.5 Размещения - Теория"
         }
       },
       {
@@ -88,10 +139,35 @@ export default [
         name: "Razmechenia-calc",
         component: () =>
           import(
-            "@/content/1.3-razmechenia/calc/1.3-razmechenia.calc.content.vue"
+            "@/content/1.5-razmechenia/calc/1.5-razmechenia.calc.content.vue"
           ),
         meta: {
-          articleTitle: "1.3 Размещения - Калькулятор"
+          articleTitle: "1.5 Размещения - Калькулятор"
+        }
+      },
+        //////////////////////////////////1.6-razmechenia-dup
+      {
+        path: "razmechenia-dup/theory",
+        name: "Razmechenia-dup-theory",
+        component: () =>
+          import(
+            "@/content/1.6-razmechenia-dup/theory/1.6-razmechenia-dup.theory.content.vue"
+          ),
+        meta: {
+          //friendlyTitle: "1. Элемепппппппнты комбинаторики", //
+          friendlyName: "1.6 Размещения с повторениями",
+          articleTitle: "1.6 Размещения с повторениями - Теория"
+        }
+      },
+      {
+        path: "razmechenia-dup/calc",
+        name: "Razmechenia-dup-calc",
+        component: () =>
+          import(
+            "@/content/1.6-razmechenia-dup/calc/1.6-razmechenia-dup.calc.content.vue"
+          ),
+        meta: {
+          articleTitle: "1.6 Размещения с повторениями - Калькулятор"
         }
       },
       //////////////////////////////////2.1-hypergeom
@@ -165,27 +241,52 @@ export default [
           articleTitle: "3.1 Граничная теорема Лапласа - Калькулятор"
         }
       },
-      ////////////////////////////////// 3.2-puasson
+      //////////////////////////////////3.2-laplas_integral
+      {
+        path: "laplas_integral/theory",
+        name: "Laplas_integral-theory",
+        component: () =>
+          import(
+            "@/content/3.2-laplas_integral/theory/3.2-laplas_integral.theory.content.vue"
+          ),
+        meta: {
+          //friendlyTitle: "3.1 Граничные теоремы", //
+          friendlyName: "3.2 Интегральная теорема Лапласа",
+          articleTitle: "3.2 Интегральная теорема Лапласа - Теория"
+        }
+      },
+      {
+        path: "laplas_integral/calc",
+        name: "Laplas_integral-calc",
+        component: () =>
+          import(
+            "@/content/3.2-laplas_integral/calc/3.2-laplas_integral.calc.content.vue"
+          ),
+        meta: {
+          articleTitle: "3.2 Интегральная теорема Лапласа - Калькулятор"
+        }
+      },
+      ////////////////////////////////// 3.3-puasson
       {
         path: "puasson/theory",
         name: "Puasson-theory",
         component: () =>
-          import("@/content/3.2-puasson/theory/3.2-puasson.theory.content.vue"),
+          import("@/content/3.3-puasson/theory/3.3-puasson.theory.content.vue"),
         meta: {
-          //friendlyTitle: "3.2 Граничные теоремы", //
-          friendlyName: "3.2 Теорема Пуассона",
-          articleTitle: "3.2 Теорема Пуассона - Теория"
+          //friendlyTitle: "3.3 Граничные теоремы", //
+          friendlyName: "3.3 Теорема Пуассона",
+          articleTitle: "3.3 Теорема Пуассона - Теория"
         }
       },
       {
         path: "puasson/calc",
         name: "Puasson-calc",
         component: () =>
-          import("@/content/3.2-puasson/calc/3.2-puasson.calc.content.vue"),
+          import("@/content/3.3-puasson/calc/3.3-puasson.calc.content.vue"),
         meta: {
-          articleTitle: "3.2 Теорема Пуассона - Калькулятор"
+          articleTitle: "3.3 Теорема Пуассона - Калькулятор"
         }
-      }
+      },
     ]
   },
   {

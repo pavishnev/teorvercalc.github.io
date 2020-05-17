@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <tvc-header />
+
     <router-view name="sidebar" />
     <router-view />
   </div>
