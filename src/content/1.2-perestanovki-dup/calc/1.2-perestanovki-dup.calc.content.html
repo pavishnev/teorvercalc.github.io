@@ -1,19 +1,13 @@
 <div class="calc-wrap">
     <form action="" class="calculator">
-
         <h3><b>Инструкция:</b></h3>
         <ul class="list-group list-group-flush mr-auto instruction">
-            <li class="list-group-item">    
-                <p><b>n -</b> кол-во независимых испытаний
-                </p>
+            <li class="list-group-item">
+                <p><b>n -</b> кол-во обьектов, которые нужно переставить</p>
             </li>
             <li class="list-group-item">
-                <p><b>k -</b> сколько раз должно появиться событие из n испытаний
-                </p>
-            </li>
-            <li class="list-group-item">
-                <p><b>p -</b> вероятность появления некого события в каждом испытании (соответственно
-                    q = 1 - р это вероятность непоявления данного события)
+                <p><b>n1,n2 ... -</b>повторяющиеся обьекты, которые нужно переставить (их сумма должна равняться n).
+                Вводите их через запятую
                 </p>
             </li>
         </ul>
@@ -30,22 +24,17 @@
             <tbody>
                 <tr>
                     <td>
-                        <h4><b>k =</b></h4>
-                    </td>
-                    <td><input v-model="param_k" type="text" class="form-control"></td>
-                    <td rowspan="3"> <img src="/img/calc/5.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>
                         <h4><b>n =</b></h4>
                     </td>
-                    <td><input v-model="param_n" type="text" class="form-control"></td>
+                    <td><input type="text" v-model="param_N" class="form-control"></td>
+                    <td rowspan="3"> <img src="/img/calc/1.1.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>
-                        <h4><b>p =</b></h4>
+                        <h4><b>n1, n2 ... =</b></h4>
                     </td>
-                    <td><input v-model="param_p" type="text" class="form-control"></td>
+                    <td><input type="text" v-model="param_N" class="form-control"></td>
+                    <td> </td>
                 </tr>
                 <tr>
                     <td colspan="2">

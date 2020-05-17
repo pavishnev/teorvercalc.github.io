@@ -1,25 +1,30 @@
 <div class="calc-wrap">
     <form action="" class="calculator">
 
-   <h3><b>Инструкция:</b></h3>
+<h3><b>Инструкция:</b></h3>
         <ul class="list-group list-group-flush mr-auto instruction">
             <li class="list-group-item">
                 <p style="color:red;"><b>ВНИМАНИЕ!</b></p>
                 <p>Данная формула рекомендуется к использованию, в случае наличия большого кол-ва испытаний,
-                    с вероятностью БОЛЕЕ 0.1. Также она применима, если нужно получить РОВНО k успехов из n испытаний
+                    с вероятностью БОЛЕЕ 0.1. Также она применима, если нужно получить некое кол-во успехов в диапазоне k1 ≤ k ≤ k2 из n испытаний
                 </p>
             </li>
             <li class="list-group-item">    
                 <p><b>n -</b> кол-во независимых испытаний
                 </p>
             </li>
-            <li class="list-group-item">
-                <p><b>k - </b> ровно сколько раз должно появиться событие из n испытаний
-                </p>
-            </li>
+         
             <li class="list-group-item">
                 <p><b>p -</b> вероятность появления некого события в каждом испытании (соответственно
                     q = 1 - р это вероятность непоявления данного события)
+                </p>
+            </li>
+            <li class="list-group-item">
+                <p><b>k1 - </b> нижняя граница кол-ва появления события из n испытаний
+                </p>
+            </li>
+            <li class="list-group-item">
+                <p><b>k2 - </b> верхняя граница кол-ва появления события из n испытаний
                 </p>
             </li>
         </ul>
@@ -39,7 +44,7 @@
                         <h4><b>n =</b></h4>
                     </td>
                     <td><input v-model="param_n" type="text" class="form-control"></td>
-                    <td rowspan="4"> <img src="/img/calc/6.png" alt=""></td>
+                    <td rowspan="4"> <img src="/img/calc/6.1.png" alt=""></td>
                 </tr>
                 <tr>
                     <td>
@@ -49,7 +54,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <h4><b>k =</b></h4>
+                        <h4><b>k1 =</b></h4>
+                    </td>
+                    <td><input v-model="param_k" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4><b>k2 =</b></h4>
                     </td>
                     <td><input v-model="param_k" type="text" class="form-control"></td>
                 </tr>

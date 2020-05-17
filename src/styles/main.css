@@ -47,7 +47,7 @@
     color:grey;
    }
  .list-group-item{
-    background-color: transparent;
+    background-color: transparent !important;
 }
 .wrapper .content{
     grid-area: content;
@@ -217,16 +217,27 @@ justify-content: space-between;
     display: inline-block;
    /* max-width: 100%;*/
    height: 100%;
-   margin:auto 10rem ;
+   margin:auto 0 auto 8rem ;
 /* margin:0 15rem 0 auto;*/
-float:center;
+
 
 }
 
 .calc-wrap table td{
     vertical-align: inherit;
+    text-align:center;
+   min-width: 9rem;
 }
 .calc-wrap table{
  width: 100%;
 
 }
+
+[colspan="4"]{
+     text-align:left !important;
+}
+  
+.instruction .list-group-item{
+    padding:0.2rem 0;
+}
+
